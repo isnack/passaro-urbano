@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { HttpHeaders } from '@angular/common/http';
 
 import { Pedido } from './shared/pedido.model';
-import { URL_API } from './app.api';
+import { URL_APIONLINE } from './app.api';
 
 @Injectable()
 export class OrdemCompraService {
@@ -17,7 +17,7 @@ export class OrdemCompraService {
     };
 
     return this.http.post<Pedido>(
-      `${URL_API}/pedido`,
+      `${URL_APIONLINE}/pedido`,
       JSON.stringify(pedido),
       httpOptions,
     );
