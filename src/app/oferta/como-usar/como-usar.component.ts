@@ -10,6 +10,8 @@ import { ActivatedRoute, Params } from '@angular/router';
 })
 export class ComoUsarComponent implements OnInit {
   public comoUsar: string;
+  public dados: boolean = false;
+
   constructor(
     private ofertasService: OfertasService,
     private route: ActivatedRoute,
@@ -21,6 +23,7 @@ export class ComoUsarComponent implements OnInit {
         .getComoUsarPorId(parametros.id)
         .then((descricao: string) => {
           this.comoUsar = descricao;
+          this.dados = true;
         });
     });
   }

@@ -108,5 +108,5 @@
       }
     }
   },
-  "defaultProject": "App2"
+  "defaultProject": "dist/App2"
 }

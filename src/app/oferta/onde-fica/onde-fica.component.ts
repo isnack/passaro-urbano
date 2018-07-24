@@ -10,6 +10,8 @@ import { OfertasService } from '../../ofertas.service';
 })
 export class OndeFicaComponent implements OnInit {
   public ondeFica: string;
+  public dados: boolean = false;
+
   constructor(
     private ofertasService: OfertasService,
     private route: ActivatedRoute,
@@ -21,6 +23,7 @@ export class OndeFicaComponent implements OnInit {
         .getOndeFicaPorId(parametros.id)
         .then((descricao: string) => {
           this.ondeFica = descricao;
+          this.dados = true;
         });
     });
   }
