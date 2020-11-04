@@ -1,6 +1,6 @@
-# App2
+# Passáro Urbano
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.5.
+Este Projeto foi desenvolvido em Angular no Curso de Desenvolvimento WEB com ES6, TypeScript e Angular da Udemy
 
 ## Development server
 
